@@ -3,7 +3,289 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi, i'm Babu Natarajan</title>
-    <link rel="stylesheet" href="./style.css">
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+    height: 100%;
+    width: 100%;
+   background: linear-gradient(45deg,#e7031e,#5240d5,#ed891f);
+    background-size: 300% 300%;
+   animation:color 12s ease-in-out infinite;
+}
+@keyframes color{
+   0%{
+       background-position: 0 50%;
+   }
+   50%{
+       background-position: 100% 50%;
+   }
+   100%{
+       background-position: 0 50%;
+   }
+}
+  nav{
+    position: relative;
+   width: 100%;
+   height: 100px;
+   background: rgba(255,255, 255, .1);
+   box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+  
+  }
+  .navbar a{
+    position: relative;
+    color: rgb(233, 237, 242);
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+   margin-top: 40px;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+ 
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(245, 234, 234);
+    
+  }
+  /**/
+ 
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(220, 207, 207, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }
+  
+  .contact{ 
+    position: absolute;
+    background: rgba(255,255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+   
+    height: 170px;
+    width: 50px;
+    top: 200px;
+    border-radius: 10px;
+}
+.tw{
+  height: 20px;
+  width: 20px;
+}
+.social{
+  position: relative;
+  top: 15px;
+  left: 15px; 
+  box-sizing: inherit; 
+}
+.Header{
+  margin-top: 100px;
+  text-align: center;
+}
+.ptag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  line-height: 1.6;
+  margin: auto; 
+}
+
+@media only screen and (min-width: 600px) {
+  .h1{
+  font-weight: 800;
+  font-size: 80px;
+}
+.ptag {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+}
+.Header{
+  margin-top: 200px;
+ position: relative;
+ text-align: center;
+}
+.contact{ 
+  position: absolute;
+  background: rgba(255,255, 255, .1);
+  box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+ 
+  height: 206px;
+  width: 60px;
+  top: 400px;
+  border-radius: 10px;
+}
+.tw{
+height: 30px;
+width: 30px;
+}
+.social{
+position: relative;
+top: 15px;
+left: 15px; 
+box-sizing: inherit; 
+}
+.button{
+   
+  display: flex;
+  color: black;
+  height: 80px;
+  width: 100px;
+ align-items: center;
+ background: rgba(255,255, 255, .1);
+  box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+ justify-content: center;   
+  margin: auto;
+  margin-top:55px;
+  font-size: 25px;
+  border-radius: 10px;
+  
+}
+
+} /* this the end of */
+span{
+    color: aliceblue;
+}
+.button{
+   
+       display: flex;
+       color: black;
+       height: 80px;
+       width: 130px;
+      align-items: center;
+      background: rgba(255,255, 255, .1);
+      box-shadow: 0 25px 45px rgba(0,0, 0, .2);
+      justify-content: center;   
+       margin: auto;
+       margin-top:55px;
+       font-size: 25px;
+       border-radius: 10px;
+}
+.aboutme{
+    display: flex;
+       color: black;
+       height: 60px;
+       width: 100px;
+      align-items: center;
+      justify-content: center;   
+       margin: auto;
+       margin-top:130px;
+       font-size:19px;
+       
+}
+.do{
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.left, .right {
+  height: 100vh;
+  padding: 20px;
+}
+
+.left {
+
+    margin-top: 50;
+    display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-left: 50;
+  text-align: center;
+}
+
+.right {
+    display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contentskills {
+  padding: 20px;
+}
+
+.MySkills {
+  margin-top: 0;
+}
+
+.Skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skill {
+  padding: 5px;
+}
+.rititle{
+   
+}
+</style>
   </head>
 
   <body>
@@ -57,8 +339,52 @@
       <br>
       <p class="ptag">A Frontend focused Web Developer building the Frontend of Websites and Web Applications <br>that leads to the success of the overall product</p>
    </div>
+  <div class="button">
+   Project
+  </div>
+ <div class="aboutme">
+  <h4>ABOUT ME</h4></div>
+  <p class="do">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+ 
+  <div class="grid-container">
+    <div class="left">
+     
+      <div class="ripara">
+        <p>Hello!👋 I'm <strong>Babu Natarajan</strong>, an aspiring front-end developer passionate about crafting delightful and intuitive digital experiences.</p>
+        <p>I'm <strong>Frontend Focused Web Developer</strong>. I have a strong foundation in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, and I'm proficient in utilizing modern frameworks like <strong>React</strong>. I'm constantly expanding my knowledge by exploring new technologies and frameworks, eager to learn from experienced developers and contribute my skills to a team environment. Check out some of my work in the <strong>Projects</strong> section.</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="contentskills">
+        <h3 class="MySkills"></h3>
+        <div class="Skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Github</div>
+          <div class="skill">Java</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
 
-<script src="./script.js"></script>
+ </div>
+<script >
+    function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+  
+</script>
 
   
   </body>
